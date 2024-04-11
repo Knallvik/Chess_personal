@@ -1,9 +1,9 @@
 # Chess_personal
-Personal project
+Personal project\n
+\n
+python3 main.py to run\n
 
-python3 main.py to run
-
-Input a letter and a number without space to make moves
-E.g: d2
-     d4
+Input a letter and a number without space to make moves\n
+E.g: d2 \n
+     d4 \n
 Includes check, check mate, but no forms of remí.

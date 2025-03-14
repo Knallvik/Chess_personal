@@ -117,9 +117,9 @@ class Queen(Piece):
     
     def type(self):
         if self.color == 'white':
-            return "WQ" #white queen
+            return chr(0x265B) + ' ' #black queen
         else:
-            return "BQ" #black queen
+            return chr(0x2655) + ' ' #white queen
 
     def __str__(self):
         return self.type()

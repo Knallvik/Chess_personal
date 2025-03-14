@@ -24,9 +24,9 @@ class King(Piece):
     
     def type(self):
         if self.color == 'white':
-            return "WK" #white King
+            return chr(0x265A) + ' ' #black King
         else:
-            return "BK" #black King
+            return chr(0x2654) + ' ' #white King
 
     def __str__(self):
         return self.type()

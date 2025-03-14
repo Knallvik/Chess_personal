@@ -280,7 +280,7 @@ class Board():
 
     #Print the checkboard
     def __str__(self):
-        str = "  "
+        str = " "
         #x-plane, first line
         for i in range(Board.get_lim()):
             str+= f" {self.x_plane[i]} "

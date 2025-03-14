@@ -62,9 +62,9 @@ class Pawn(Piece):
 
     def type(self):
         if self.color == 'white':
-            return "WP" #pawn
+            return chr(0x265F) + ' ' #black Pawn
         else:
-            return "BP" #black Pawn
+            return chr(0x2659) + ' ' #pawn
 
     def __str__(self):
         return self.type()

@@ -22,9 +22,9 @@ class Knight(Piece):
     
     def type(self):
         if self.color == 'white':
-            return "WH" #white horse, so not as to confuse with king
+            return chr(0x265E) + ' ' #black horse, so not as to confuse with king
         else:
-            return "BH" #black horse, so not as to confuse with king
+            return chr(0x2658) + ' ' #white horse, so not as to confuse with king
 
     def __str__(self):
         return self.type()

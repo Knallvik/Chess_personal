@@ -64,9 +64,9 @@ class Bishop(Piece):
     
     def type(self):
         if self.color == 'white':
-            return "WB" #white bishop
+            return chr(0x265D) + ' ' #black bishop
         else:
-            return "BB" #black bishop
+            return chr(0x2657) + ' ' #white bishop
 
     def __str__(self):
         return self.type()

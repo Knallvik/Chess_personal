@@ -65,9 +65,9 @@ class Tower(Piece):
     
     def type(self):
         if self.color == 'white':
-            return "WT" #white tower
+            return chr(0x265C) + ' ' #black tower
         else:
-            return "BT" #black tower
+            return chr(0x2656) + ' ' #white tower
 
     def __str__(self):
         return self.type()

@@ -18,6 +18,7 @@ class Board():
                       for i in range(Board.get_lim())]
     
     #Set the max limit (-1) in the x-y direction
+    @staticmethod
     def get_lim():
         return 8
     
@@ -252,13 +253,13 @@ class Board():
                 #See if the check is a check mate
                 if self.check_mate('white'):
                     self.continue_game = False
-                    print('Black Wins')
+                    print(f'Black Wins in {self.number_moves} moves')
 
             elif self.check_black:
                 print('Black has been checked')
                 if self.check_mate('black'):
                     self.continue_game = False
-                    print('Black Wins')
+                    print(f'White Wins in {self.number_moves} moves')
 
             #Change who is to move
             if self.to_move == 'white':
